@@ -185,7 +185,7 @@ func (d *Destination) remove(ctx context.Context, r opencdc.Record, b *pgx.Batch
 		Msg("deleting record")
 	query, args, err := d.stmtBuilder.
 		Delete(tableName).
-		Where(sq.Eq{keyColumnName: key[keyColumnName]}).
+		Where(sq.Eq{fmt.Sprintf("%q", keyColumnName): key[keyColumnName]}).
 		ToSql()
 	if err != nil {
 		return fmt.Errorf("error formatting delete query: %w", err)
@@ -277,12 +277,12 @@ func (d *Destination) formatUpsertQuery(
 	keyColumnName string,
 	tableName string,
 ) (string, []interface{}, error) {
-	upsertQuery := fmt.Sprintf("ON CONFLICT (%s) DO UPDATE SET", keyColumnName)
+	upsertQuery := fmt.Sprintf("ON CONFLICT (%q) DO UPDATE SET", keyColumnName)
 	for column := range payload {
 		// tuples form a comma separated list, so they need a comma at the end.
 		// `EXCLUDED` references the new record's values. This will overwrite
 		// every column's value except for the key column.
-		tuple := fmt.Sprintf("%s=EXCLUDED.%s,", column, column)
+		tuple := fmt.Sprintf("%q=EXCLUDED.%q,", column, column)
 		// TODO: Consider removing this space.
 		upsertQuery += " "
 		// add the tuple to the query string
@@ -314,13 +314,13 @@ func (d *Destination) formatColumnsAndValues(key, payload opencdc.StructuredData
 	// range over both the key and payload values in order to format the
 	// query for args and values in proper order
 	for key, val := range key {
-		colArgs = append(colArgs, key)
+		colArgs = append(colArgs, fmt.Sprintf("%q", key))
 		valArgs = append(valArgs, val)
 		delete(payload, key) // NB: Delete Key from payload arguments
 	}
 
 	for field, value := range payload {
-		colArgs = append(colArgs, field)
+		colArgs = append(colArgs, fmt.Sprintf("%q", field))
 		valArgs = append(valArgs, value)
 	}
 
