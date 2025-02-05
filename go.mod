@@ -1,4 +1,4 @@
-module github.com/conduitio/conduit-connector-postgres
+module github.com/derElektroBesen/conduit-connector-postgres
 
 go 1.23.2
 

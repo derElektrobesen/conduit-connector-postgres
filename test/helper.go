@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/conduitio/conduit-commons/csync"
-	"github.com/conduitio/conduit-connector-postgres/source/cpool"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/cpool"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"

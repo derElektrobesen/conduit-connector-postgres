@@ -18,7 +18,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/conduitio/conduit-connector-postgres/source/types"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/types"
 	"github.com/jackc/pglogrepl"
 	"github.com/jackc/pgx/v5/pgtype"
 )

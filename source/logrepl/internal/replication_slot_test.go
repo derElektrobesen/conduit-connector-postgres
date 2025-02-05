@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/conduitio/conduit-connector-postgres/test"
+	"github.com/derElektroBesen/conduit-connector-postgres/test"
 	"github.com/matryer/is"
 )
 

@@ -24,9 +24,9 @@ import (
 
 	"github.com/conduitio/conduit-commons/opencdc"
 	cschema "github.com/conduitio/conduit-commons/schema"
-	"github.com/conduitio/conduit-connector-postgres/source/position"
-	"github.com/conduitio/conduit-connector-postgres/source/schema"
-	"github.com/conduitio/conduit-connector-postgres/source/types"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/position"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/schema"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/types"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 	sdkschema "github.com/conduitio/conduit-connector-sdk/schema"
 	"github.com/google/uuid"

@@ -15,7 +15,7 @@
 package main
 
 import (
-	postgres "github.com/conduitio/conduit-connector-postgres"
+	postgres "github.com/derElektroBesen/conduit-connector-postgres"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 )
 

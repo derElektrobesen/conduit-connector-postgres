@@ -22,7 +22,7 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/destination"
+	"github.com/derElektroBesen/conduit-connector-postgres/destination"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 	"github.com/jackc/pgx/v5"
 )

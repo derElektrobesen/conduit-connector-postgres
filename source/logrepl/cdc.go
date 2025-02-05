@@ -20,8 +20,8 @@ import (
 	"fmt"
 
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/source/logrepl/internal"
-	"github.com/conduitio/conduit-connector-postgres/source/position"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/logrepl/internal"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/position"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 	"github.com/jackc/pglogrepl"
 	"github.com/jackc/pgx/v5/pgxpool"

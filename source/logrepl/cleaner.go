@@ -19,8 +19,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/conduitio/conduit-connector-postgres/source/cpool"
-	"github.com/conduitio/conduit-connector-postgres/source/logrepl/internal"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/cpool"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/logrepl/internal"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 )
 

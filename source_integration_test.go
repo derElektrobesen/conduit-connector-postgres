@@ -18,8 +18,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/conduitio/conduit-connector-postgres/source/logrepl"
-	"github.com/conduitio/conduit-connector-postgres/test"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/logrepl"
+	"github.com/derElektroBesen/conduit-connector-postgres/test"
 	sdk "github.com/conduitio/conduit-connector-sdk"
 	"github.com/matryer/is"
 )

@@ -18,7 +18,7 @@ import (
 	"context"
 
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/source/logrepl"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/logrepl"
 )
 
 // Iterator is an object that can iterate over a queue of records.
