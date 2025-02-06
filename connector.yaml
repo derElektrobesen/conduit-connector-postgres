@@ -1,6 +1,6 @@
 version: "1.0"
 specification:
-  name: postgres
+  name: psql
   summary: Conduit connector for PostgreSQL
   description: |
     ## Source
