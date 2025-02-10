@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/source/position"
-	"github.com/conduitio/conduit-connector-postgres/test"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/position"
+	"github.com/derElektroBesen/conduit-connector-postgres/test"
 	"github.com/google/go-cmp/cmp"
 	"github.com/matryer/is"
 )

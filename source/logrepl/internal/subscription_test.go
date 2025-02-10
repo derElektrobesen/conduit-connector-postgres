@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/conduitio/conduit-connector-postgres/test"
+	"github.com/derElektroBesen/conduit-connector-postgres/test"
 	"github.com/jackc/pglogrepl"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/matryer/is"

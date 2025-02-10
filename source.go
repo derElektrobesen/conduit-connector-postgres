@@ -24,10 +24,10 @@ import (
 	"github.com/conduitio/conduit-commons/csync"
 	"github.com/conduitio/conduit-commons/lang"
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/source"
-	"github.com/conduitio/conduit-connector-postgres/source/cpool"
-	"github.com/conduitio/conduit-connector-postgres/source/logrepl"
 	sdk "github.com/conduitio/conduit-connector-sdk"
+	"github.com/derElektroBesen/conduit-connector-postgres/source"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/cpool"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/logrepl"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 )

@@ -19,7 +19,7 @@ linters-settings:
   forbidigo:
     forbid:
       - p: ^pgxpool\.New.*$
-        msg: "Use github.com/conduitio/conduit-connector-postgres/source/cpool.New instead."
+        msg: "Use github.com/derElektroBesen/conduit-connector-postgres/source/cpool.New instead."
 issues:
   exclude-rules:
     - path: test/helper\.go

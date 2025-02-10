@@ -15,8 +15,8 @@
 package main
 
 import (
-	postgres "github.com/conduitio/conduit-connector-postgres"
 	sdk "github.com/conduitio/conduit-connector-sdk"
+	postgres "github.com/derElektroBesen/conduit-connector-postgres"
 )
 
 func main() {

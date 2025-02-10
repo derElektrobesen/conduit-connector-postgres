@@ -20,9 +20,9 @@ import (
 	"fmt"
 
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-postgres/source/position"
-	"github.com/conduitio/conduit-connector-postgres/source/snapshot"
 	sdk "github.com/conduitio/conduit-connector-sdk"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/position"
+	"github.com/derElektroBesen/conduit-connector-postgres/source/snapshot"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
